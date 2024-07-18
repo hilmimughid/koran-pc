@@ -15,8 +15,9 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="assets/libraries/fontawesome/css/all.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -58,6 +59,7 @@
         </div>
     </nav>
 
+    <!-- Banner -->
     <div class="container mt-4">
         <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
             <div class="col px-0">
@@ -221,11 +223,29 @@
                             <p class="text-secondary">17 Juli 2024</p>
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Iklan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/images/iklan.jpg" alt="iklan" width="560px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
     <footer class="mt-5 py-3 text-center bg-dark" data-bs-theme="dark">
         <a href="#"><img src="assets/images/facebook.png" width="40px" /></a>
         <a href="#"><img src="assets/images/instagram.png" width="40px" class="mx-2" /></a>
@@ -235,6 +255,8 @@
 
     <!-- Bootstrap JS -->
     <script src="assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/iklan.js"></script>
 </body>
 
 </html>
